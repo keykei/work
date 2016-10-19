@@ -78,7 +78,7 @@ a {
 .close-button {
   	position: absolute;
   	border: none;
-  	background: n1one;
+  	background: none;
   	margin: 0;
   	z-index: 100;
   	top: 0;
@@ -105,6 +105,11 @@ a {
 
 .close-button:hover {
   	color: #7b7b7b;
+}
+
+.close-button {
+     	opacity: 1;
+     	pointer-events: auto;
 }
 
 /* show class for content close button */
@@ -162,6 +167,15 @@ body {
 	width: 800px;
 
 }
+
+.meta__avatar {
+	display: block;
+  	border-radius: 50%;
+  	margin: 2em auto;
+	width: 60%;
+	height: 60%;
+}
+
 
 /* 先頭文字　拡大，ライン設定　*/		
 .itemtop {

@@ -9,16 +9,15 @@
 
 
 body {
-  background: #fff;
-  color: #b7282e;	/*主文字色*/
-  font-weight: 400;
-  font-size: 16px;
-  font-family: "Martel Sans", Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
-  overflow-y: scroll;
-  /* force scroll to appear */
+  	color: #b7282e;	/*主文字色*/
+  	font-weight: 400;
+  	font-size: 16px;
+  	font-family: "Martel Sans", Arial, sans-serif;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+  	overflow: hidden;
+  	overflow-y: scroll;
+  	/* force scroll to appear */
 }
 
 /* helper class when showing content */
@@ -144,6 +143,8 @@ a {
 /* 本体 */
 body {
   	background: #fff;
+	background-image: url("../img/desk.jpg");
+	background-size: cover;
 }
 
 /* コンテンツ　内容 */

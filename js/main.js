@@ -92,7 +92,6 @@
 
 		closeCtrl.addEventListener('click', function() {
 			// hide content
-			hideContent();
 		});
 
 		// keyboard esc - hide content

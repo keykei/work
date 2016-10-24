@@ -23,9 +23,9 @@ body {
 /* helper class when showing content */
 
 a {
-  outline: none;
-  color: #81c483;	/*リンク色*/
-  text-decoration: none;
+  	outline: none;
+  	color: #b7282e;	/*リンク色*/
+  	text-decoration: none;
 }
 
 /* grid item element and full content element styles */
@@ -161,6 +161,7 @@ body {
 }
 
 .introduct {
+	padding: 20px;
 	margin-right: auto;
 	margin-left: auto;
 	text-align: left;
@@ -170,6 +171,7 @@ body {
 }
 
 .meta__avatar {
+	background-color: #fff;
 	display: block;
   	border-radius: 50%;
   	margin: 2em auto;
@@ -195,7 +197,27 @@ body {
 	font-size: 1.5em;
 }
 
-	
+.link {
+	background-color: rgba(255, 255, 255, 0.2);
+  	font-size: 1.50em;
+	font-weight: bold; 
+	font-family: "Playfair Display", serif;
+	text-align: center;
+	margin-top: 30px;
+}
+.link .prev {
+	text-align: center;
+	margin-right: 60px;
+}
 
+.link .back {
+	text-align: center;
+	margin-right: 60px;
+}
+
+.link .next{
+	text-align: center;
+	margin-right: 60px;
+}
 
 /*# sourceMappingURL=style1.css.map */

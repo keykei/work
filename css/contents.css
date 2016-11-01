@@ -9,7 +9,7 @@
 
 
 body {
-  	color: #b7282e;	/*主文字色*/
+  	color: #b7282e;
   	font-weight: 400;
   	font-size: 16px;
   	font-family: "Martel Sans", Arial, sans-serif;
@@ -24,8 +24,14 @@ body {
 
 a {
   	outline: none;
-  	color: #b7282e;	/*リンク色*/
+  	color: #b7282e;
   	text-decoration: none;
+}
+
+a:hover,
+a:focus {
+        color: #d9333f;
+        outline: none;
 }
 
 /* grid item element and full content element styles */
@@ -74,55 +80,55 @@ a {
 
 /* Viewport sizes based on column number and sidebar */
 @media screen and (min-width: 600px) {
-  html,
-  body,
-.container, .main {
-	height: 100vh;
+	html, body,
+	.container, .main {
+		height: 100vh;
+	}
+
+	.main {
+    		height: 100%;
+	}
+
+	.content__item {
+    		font-size: 1em;
+	}
+
+	.grid__item {
+    		padding: 45px 45px 30px;
+  	}
 }
 
-/*　メイン調整　*/
-.main {
-    	height: 100%;
-}
-
-.content__item {
-    	font-size: 1em;
-  }
-
-.grid__item {
-    	padding: 45px 45px 30px;
-  }
-
-}
-
-/* 本体 */
+/* Redefine some styles for this layout */
 body {
   	background: #fff;
 	background-image: url("../img/desk.jpg");
 	background-size: cover;
 }
 
-/* コンテンツ　内容 */
 .content {
+	position: absolute;
   	left: auto;
   	right: 0;
   	width: 100vw;
 }
 
-.content__item p {
-	text-align: center;
-  	font-size: 1.15em;
-	line-height: 30px;
+.content__item .left {
+	text-align: left;
+	margin-left: 10%;
 }
 
-.introduct {
-	padding: 20px;
-	margin-right: auto;
-	margin-left: auto;
+.content__item h3 {
 	text-align: left;
-	word-break: break-all;
-	width: 800px;
+}
 
+.content__item p {
+  	font-size: 1.15em;
+	text-align: center;
+	line-height: 25px;
+}
+
+.content__item ul {
+	text-align: left;
 }
 
 .meta__avatar {
@@ -130,12 +136,11 @@ body {
 	display: block;
   	border-radius: 50%;
   	margin: 2em auto;
-	width: 60%;
-	height: 60%;
+	width: 30%;
+	height: 30%;
 }
 
 
-/* 先頭文字　拡大，ライン設定　*/		
 .itemtop {
 	width: 100px;
 	margin: 0;
@@ -160,19 +165,22 @@ body {
 	text-align: center;
 	margin-top: 30px;
 }
+/* flex 使ったら．．．？ */
+
 .link .prev {
 	text-align: center;
-	margin-right: 80px;
-}
-
-.link .back {
-	text-align: center;
-	margin-right: 80px;
+	margin-right: 50px;
 }
 
 .link .next{
 	text-align: center;
-	margin-right: 80px;
+	margin-left: 50px;
+}
+
+.link .back .content.content--show {
+	pointer-events: auto;
+	visibility: visible;
+	text-align: center;
 }
 
 /*# sourceMappingURL=style1.css.map */

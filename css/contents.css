@@ -113,8 +113,9 @@ body {
 }
 
 .content__item .left {
+	width: 1000px;
 	text-align: left;
-	margin-left: 10%;
+	margin-left: 20%;
 }
 
 .content__item h3 {
@@ -177,7 +178,7 @@ body {
 	margin-left: 50px;
 }
 
-.link .back .content.content--show {
+.link .top .content.content--show {
 	pointer-events: auto;
 	visibility: visible;
 	text-align: center;

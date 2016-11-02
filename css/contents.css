@@ -178,10 +178,16 @@ body {
 	margin-left: 50px;
 }
 
-.link .top .content.content--show {
+.link .home .content.content--show {
 	pointer-events: auto;
 	visibility: visible;
 	text-align: center;
+}
+
+.top {
+	
+	text-align:center;
+	margin-left: 90%;
 }
 
 /*# sourceMappingURL=style1.css.map */
